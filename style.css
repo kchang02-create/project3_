@@ -1,0 +1,112 @@
+@font-face {
+	font-family: "cabin";
+	src: url("cabin_open.ttf") format("truetype");
+}
+
+
+.container {
+    max-width: 480px;
+	width: 100%;
+	margin: 0 auto;
+	font-size: 18px;
+	padding: 40px; 
+    font-family: "cabin";
+}
+
+.container h1 {
+	font-size: 50px;
+	line-height: 1.2em;
+	margin-bottom: 20px;
+    font-variation-settings: "SCRE" 100;
+}
+
+.container p {
+	line-height: 1.2em;
+	margin-bottom: 20px;
+	color: #222222;
+}
+
+
+.title-text {
+    letter-spacing: 0.15em auto; 
+    line-height: 1.5em;
+    font-size: 50px; 
+    text-align: center;
+    height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.title-animation {
+	font-family: "cabin";
+	font-size: 50px;
+	font-variation-settings: "SCRE" 0;
+
+	animation-name: title-animation;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	animation-direction: alternate;
+}
+
+@keyframes title-animation {
+	0% {
+		font-variation-settings: "SCRE" 0;
+	}
+	25% {
+		font-variation-settings: "SCRE" 50;
+        color: red;
+	}
+	50% {
+		font-variation-settings: "SCRE" 100;
+		color: red;
+	}
+	75% {
+		font-variation-settings: "SCRE" 50;
+	}
+	100% {
+		font-variation-settings: "SCRE" 0;
+		color:black;
+	}
+}
+
+.nav {
+	display: flex;
+	margin: 10px;
+	padding: 20px;
+	gap: 10px;
+}
+
+.nav-link {;
+	text-decoration: none;
+    color: inherit;
+}
+
+.cabin { 
+    max-width: 480px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 100px;
+    font-family: "cabin";
+	font-size: 10px;
+	font-variation-settings: "SCRE" 0;
+    line-height:1.5em;
+    color: white; 
+    display: flex;
+	gap: 10px;
+}
+
+.text { 
+    font-variation-settings: "SCRE" 0;
+    transition: font-variation-settings 500ms ease, font-size 500ms ease;
+    letter-spacing: auto;
+}
+.text:hover{ 
+    font-size: 18px;
+    line-height: 1.2em;
+	margin-bottom: 20px;
+    font-variation-settings: "SCRE" 100;
+	color: red;
+    letter-spacing: 0.5em;
+}
