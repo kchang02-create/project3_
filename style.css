@@ -3,34 +3,10 @@
 	src: url("cabin_open.ttf") format("truetype");
 }
 
-
-.container {
-    max-width: 480px;
-	width: 100%;
-	margin: 0 auto;
-	font-size: 18px;
-	padding: 40px; 
-    font-family: "cabin";
-}
-
-.container h1 {
-	font-size: 50px;
-	line-height: 1.2em;
-	margin-bottom: 20px;
-    font-variation-settings: "SCRE" 100;
-}
-
-.container p {
-	line-height: 1.2em;
-	margin-bottom: 20px;
-	color: #222222;
-}
-
-
 .title-text {
     letter-spacing: 0.15em auto; 
     line-height: 1.5em;
-    font-size: 50px; 
+    font-size: 100px; 
     text-align: center;
     height: 100vh;
 	display: flex;
