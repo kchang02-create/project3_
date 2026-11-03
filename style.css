@@ -6,12 +6,13 @@
 .title-text {
     letter-spacing: 0.15em auto; 
     line-height: 1.5em;
-    font-size: 100px; 
+    font-size: 150px; 
     text-align: center;
     height: 100vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+    max-width: 600px;
 }
 
 .title-animation {
